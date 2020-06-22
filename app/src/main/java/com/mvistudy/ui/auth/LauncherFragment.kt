@@ -1,10 +1,10 @@
 package com.mvistudy.ui.auth
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.mvistudy.R
 import kotlinx.android.synthetic.main.fragment_launcher.*
@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.fragment_launcher.*
 /**
  * @author udit roy
  */
-class LauncherFragment : Fragment() {
+class LauncherFragment : BaseAuthFragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,6 +24,10 @@ class LauncherFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        Log.d(TAG, "Launcher fragment: ${viewModel.hashCode()}")
+
+
         login.setOnClickListener {
             navLogin()
         }

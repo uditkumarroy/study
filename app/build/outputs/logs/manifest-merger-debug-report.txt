@@ -1,12 +1,13 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:2:1-21:12
+ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:2:1-23:12
 MERGED from [com.theartofdev.edmodo:android-image-cropper:2.8.0] /Users/main/.gradle/caches/transforms-2/files-2.1/f00ef90d098401752719b64d3fb2536e/jetified-android-image-cropper-2.8.0/AndroidManifest.xml:2:1-11:12
 MERGED from [com.squareup.leakcanary:leakcanary-android:2.0-alpha-3] /Users/main/.gradle/caches/transforms-2/files-2.1/7bdea46ad7c3c33da639fefcca02b94d/jetified-leakcanary-android-2.0-alpha-3/AndroidManifest.xml:17:1-32:12
 MERGED from [com.afollestad.material-dialogs:core:3.1.0] /Users/main/.gradle/caches/transforms-2/files-2.1/d889f254f924785a7f1d959939925892/jetified-core-3.1.0/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.dagger:dagger-android-support:2.22] /Users/main/.gradle/caches/transforms-2/files-2.1/4fce560a530ac8c79caf14aab4b575f0/jetified-dagger-android-support-2.22/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-ui-ktx:2.3.0-rc01] /Users/main/.gradle/caches/transforms-2/files-2.1/6e1725e53ef215a91e38d30ce824ed74/navigation-ui-ktx-2.3.0-rc01/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.3.0-rc01] /Users/main/.gradle/caches/transforms-2/files-2.1/75255e392a5603d917f279f7c2829288/navigation-ui-2.3.0-rc01/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.1.0-alpha09] /Users/main/.gradle/caches/transforms-2/files-2.1/d7aaddac2b4ba6d44b0c9d18fda8246c/material-1.1.0-alpha09/AndroidManifest.xml:17:1-24:12
@@ -51,6 +52,7 @@ MERGED from [androidx.room:room-ktx:2.2.5] /Users/main/.gradle/caches/transforms
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] /Users/main/.gradle/caches/transforms-2/files-2.1/cc79632eaf0601ae8cee2ea51cd9fd87/jetified-lifecycle-viewmodel-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-alpha03] /Users/main/.gradle/caches/transforms-2/files-2.1/49ebdd92a69da14545fb5458df77e3ca/jetified-lifecycle-livedata-ktx-2.2.0-alpha03/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.room:room-runtime:2.2.5] /Users/main/.gradle/caches/transforms-2/files-2.1/3dfbdef49bdc4261f7812d2448c36765/room-runtime-2.2.5/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.dagger:dagger-android:2.22] /Users/main/.gradle/caches/transforms-2/files-2.1/a0b27afac937a7071addde11aaee69bd/jetified-dagger-android-2.22/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/main/.gradle/caches/transforms-2/files-2.1/95b5c5652bc0ff3593157adf97b4faba/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/main/.gradle/caches/transforms-2/files-2.1/4f84e6b9faefbfb287b8067e49967e65/exifinterface-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] /Users/main/.gradle/caches/transforms-2/files-2.1/de51acb6cd3e41df65aaeac784d1d60a/jetified-lifecycle-livedata-core-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
@@ -69,25 +71,29 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/main/.gradle/cache
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0-alpha03] /Users/main/.gradle/caches/transforms-2/files-2.1/9f60bbcba6047397d36ab13aaac25d74/lifecycle-livedata-2.2.0-alpha03/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/main/.gradle/caches/transforms-2/files-2.1/3ef16feb90fb0fd7a9225b2dc097ca08/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/main/.gradle/caches/transforms-2/files-2.1/28d822855ead327374535a925955703e/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:2:1-23:12
 	package
 		ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:3:5-27
 		INJECTED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml
-		ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:2:1-21:12
+		ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:2:1-23:12
 		INJECTED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml
-		ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:2:1-21:12
+		ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:2:1-23:12
 		INJECTED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:4:5-66
+	android:name
+		ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:5:5-19:19
+ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:5:5-21:19
 MERGED from [com.squareup.leakcanary:leakcanary-android:2.0-alpha-3] /Users/main/.gradle/caches/transforms-2/files-2.1/7bdea46ad7c3c33da639fefcca02b94d/jetified-leakcanary-android-2.0-alpha-3/AndroidManifest.xml:22:5-30:19
 MERGED from [com.squareup.leakcanary:leakcanary-android:2.0-alpha-3] /Users/main/.gradle/caches/transforms-2/files-2.1/7bdea46ad7c3c33da639fefcca02b94d/jetified-leakcanary-android-2.0-alpha-3/AndroidManifest.xml:22:5-30:19
 MERGED from [com.afollestad.material-dialogs:core:3.1.0] /Users/main/.gradle/caches/transforms-2/files-2.1/d889f254f924785a7f1d959939925892/jetified-core-3.1.0/AndroidManifest.xml:11:5-47
@@ -124,20 +130,22 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/main
 		ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:11:9-40
+	android:name
+		ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:12:9-40
 activity#com.mvistudy.ui.auth.AuthActivity
-ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:12:9-18:20
+ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:14:9-20:20
 	android:name
-		ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:12:19-55
+		ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:14:19-55
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:13:13-17:29
+ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
-ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:14:17-69
+ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:14:25-66
+		ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:16:17-77
+ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:16:27-74
+		ADDED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml:18:27-74
 uses-sdk
 INJECTED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/main/Documents/AndroidStudyGit/app/src/main/AndroidManifest.xml
@@ -148,6 +156,8 @@ MERGED from [com.squareup.leakcanary:leakcanary-android:2.0-alpha-3] /Users/main
 MERGED from [com.squareup.leakcanary:leakcanary-android:2.0-alpha-3] /Users/main/.gradle/caches/transforms-2/files-2.1/7bdea46ad7c3c33da639fefcca02b94d/jetified-leakcanary-android-2.0-alpha-3/AndroidManifest.xml:20:5-44
 MERGED from [com.afollestad.material-dialogs:core:3.1.0] /Users/main/.gradle/caches/transforms-2/files-2.1/d889f254f924785a7f1d959939925892/jetified-core-3.1.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.afollestad.material-dialogs:core:3.1.0] /Users/main/.gradle/caches/transforms-2/files-2.1/d889f254f924785a7f1d959939925892/jetified-core-3.1.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.dagger:dagger-android-support:2.22] /Users/main/.gradle/caches/transforms-2/files-2.1/4fce560a530ac8c79caf14aab4b575f0/jetified-dagger-android-support-2.22/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-android-support:2.22] /Users/main/.gradle/caches/transforms-2/files-2.1/4fce560a530ac8c79caf14aab4b575f0/jetified-dagger-android-support-2.22/AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-ui-ktx:2.3.0-rc01] /Users/main/.gradle/caches/transforms-2/files-2.1/6e1725e53ef215a91e38d30ce824ed74/navigation-ui-ktx-2.3.0-rc01/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-ui-ktx:2.3.0-rc01] /Users/main/.gradle/caches/transforms-2/files-2.1/6e1725e53ef215a91e38d30ce824ed74/navigation-ui-ktx-2.3.0-rc01/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-ui:2.3.0-rc01] /Users/main/.gradle/caches/transforms-2/files-2.1/75255e392a5603d917f279f7c2829288/navigation-ui-2.3.0-rc01/AndroidManifest.xml:20:5-22:41
@@ -236,6 +246,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-alpha03] /Users/mai
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-alpha03] /Users/main/.gradle/caches/transforms-2/files-2.1/49ebdd92a69da14545fb5458df77e3ca/jetified-lifecycle-livedata-ktx-2.2.0-alpha03/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.room:room-runtime:2.2.5] /Users/main/.gradle/caches/transforms-2/files-2.1/3dfbdef49bdc4261f7812d2448c36765/room-runtime-2.2.5/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.room:room-runtime:2.2.5] /Users/main/.gradle/caches/transforms-2/files-2.1/3dfbdef49bdc4261f7812d2448c36765/room-runtime-2.2.5/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.dagger:dagger-android:2.22] /Users/main/.gradle/caches/transforms-2/files-2.1/a0b27afac937a7071addde11aaee69bd/jetified-dagger-android-2.22/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-android:2.22] /Users/main/.gradle/caches/transforms-2/files-2.1/a0b27afac937a7071addde11aaee69bd/jetified-dagger-android-2.22/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/main/.gradle/caches/transforms-2/files-2.1/95b5c5652bc0ff3593157adf97b4faba/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/main/.gradle/caches/transforms-2/files-2.1/95b5c5652bc0ff3593157adf97b4faba/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/main/.gradle/caches/transforms-2/files-2.1/4f84e6b9faefbfb287b8067e49967e65/exifinterface-1.0.0/AndroidManifest.xml:20:5-44

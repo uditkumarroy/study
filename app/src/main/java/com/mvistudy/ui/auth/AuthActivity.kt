@@ -1,16 +1,14 @@
 package com.mvistudy.ui.auth
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import com.mvistudy.R
+import com.mvistudy.ui.BaseActivity
 
 /**
  * @author udit roy
  */
 
-class AuthActivity : AppCompatActivity() {
-
-    val TAG: String = "MainActivity"
+class AuthActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
