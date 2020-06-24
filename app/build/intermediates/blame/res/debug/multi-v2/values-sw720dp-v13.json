@@ -4,7 +4,7 @@
             "outputFile": "/Users/main/Documents/AndroidStudyGit/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-v13/values-sw720dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/main/.gradle/caches/transforms-2/files-2.1/d889f254f924785a7f1d959939925892/jetified-core-3.1.0/res/values-sw720dp-v13/values-sw720dp-v13.xml",
+                    "source": "/Users/main/.gradle/caches/transforms-2/files-2.1/c54ba88c8bf93247ef3a6d4963d89ad5/jetified-core-3.1.0/res/values-sw720dp-v13/values-sw720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
