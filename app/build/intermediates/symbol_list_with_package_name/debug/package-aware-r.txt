@@ -1665,6 +1665,8 @@ id chronometer
 id clear_text
 id clip_horizontal
 id clip_vertical
+id cognizantPostFragment
+id cogzi_nav
 id collapseActionView
 id confirm_button
 id container
@@ -1715,6 +1717,7 @@ id focusable_view
 id forever
 id forgotPasswordFragment
 id forgot_password
+id fragment
 id fragment_container
 id fragment_container_view_tag
 id ghost_view
@@ -2013,6 +2016,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_cognizant
 layout activity_main
 layout crop_image_activity
 layout crop_image_view
@@ -2032,6 +2036,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_cognizant_post
 layout fragment_forgot_password
 layout fragment_launcher
 layout fragment_login
@@ -2116,6 +2121,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap leak_canary_icon
 navigation auth_nav
+navigation cogzi_nav
 plurals leak_canary_group_screen_title
 plurals leak_canary_heap_analysis_list_retained_instances
 plurals mtrl_badge_content_description
@@ -2206,6 +2212,7 @@ string fragment_create_blog
 string fragment_update_account
 string fragment_update_blog
 string fragment_view_blog
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string home
 string icon_content_description

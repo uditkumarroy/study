@@ -3,5 +3,10 @@
     "name": "auth_nav",
     "navigationXmlIds": [],
     "deepLinks": []
+  },
+  {
+    "name": "cogzi_nav",
+    "navigationXmlIds": [],
+    "deepLinks": []
   }
 ]

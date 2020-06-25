@@ -28,6 +28,8 @@ public final class AppDatabase_Impl extends AppDatabase {
 
   private volatile AccountPropertiesDao _accountPropertiesDao;
 
+  private volatile CognizantDao _cognizantDao;
+
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
@@ -35,14 +37,16 @@ public final class AppDatabase_Impl extends AppDatabase {
       public void createAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("CREATE TABLE IF NOT EXISTS `auth_token` (`account_pk` INTEGER, `token` TEXT, PRIMARY KEY(`account_pk`), FOREIGN KEY(`account_pk`) REFERENCES `account_properties`(`pk`) ON UPDATE NO ACTION ON DELETE CASCADE )");
         _db.execSQL("CREATE TABLE IF NOT EXISTS `account_properties` (`pk` INTEGER NOT NULL, `email` TEXT NOT NULL, `username` TEXT NOT NULL, PRIMARY KEY(`pk`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `cognizant_post` (`pk` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `title` TEXT NOT NULL, `description` TEXT NOT NULL, `imageHref` TEXT NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '41687438ba0245123edb91bb8b41f4be')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '8c30ec8c9c75a70e21488f0f3045be94')");
       }
 
       @Override
       public void dropAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("DROP TABLE IF EXISTS `auth_token`");
         _db.execSQL("DROP TABLE IF EXISTS `account_properties`");
+        _db.execSQL("DROP TABLE IF EXISTS `cognizant_post`");
         if (mCallbacks != null) {
           for (int _i = 0, _size = mCallbacks.size(); _i < _size; _i++) {
             mCallbacks.get(_i).onDestructiveMigration(_db);
@@ -108,9 +112,23 @@ public final class AppDatabase_Impl extends AppDatabase {
                   + " Expected:\n" + _infoAccountProperties + "\n"
                   + " Found:\n" + _existingAccountProperties);
         }
+        final HashMap<String, TableInfo.Column> _columnsCognizantPost = new HashMap<String, TableInfo.Column>(4);
+        _columnsCognizantPost.put("pk", new TableInfo.Column("pk", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsCognizantPost.put("title", new TableInfo.Column("title", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsCognizantPost.put("description", new TableInfo.Column("description", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsCognizantPost.put("imageHref", new TableInfo.Column("imageHref", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysCognizantPost = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesCognizantPost = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoCognizantPost = new TableInfo("cognizant_post", _columnsCognizantPost, _foreignKeysCognizantPost, _indicesCognizantPost);
+        final TableInfo _existingCognizantPost = TableInfo.read(_db, "cognizant_post");
+        if (! _infoCognizantPost.equals(_existingCognizantPost)) {
+          return new RoomOpenHelper.ValidationResult(false, "cognizant_post(com.mvistudy.models.CognizantPost).\n"
+                  + " Expected:\n" + _infoCognizantPost + "\n"
+                  + " Found:\n" + _existingCognizantPost);
+        }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "41687438ba0245123edb91bb8b41f4be", "22fc438fd2ee2360579c7c3d3c48a3f4");
+    }, "8c30ec8c9c75a70e21488f0f3045be94", "3348b68a67230f8e41281bd641857660");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)
@@ -123,7 +141,7 @@ public final class AppDatabase_Impl extends AppDatabase {
   protected InvalidationTracker createInvalidationTracker() {
     final HashMap<String, String> _shadowTablesMap = new HashMap<String, String>(0);
     HashMap<String, Set<String>> _viewTables = new HashMap<String, Set<String>>(0);
-    return new InvalidationTracker(this, _shadowTablesMap, _viewTables, "auth_token","account_properties");
+    return new InvalidationTracker(this, _shadowTablesMap, _viewTables, "auth_token","account_properties","cognizant_post");
   }
 
   @Override
@@ -141,6 +159,7 @@ public final class AppDatabase_Impl extends AppDatabase {
       }
       _db.execSQL("DELETE FROM `auth_token`");
       _db.execSQL("DELETE FROM `account_properties`");
+      _db.execSQL("DELETE FROM `cognizant_post`");
       super.setTransactionSuccessful();
     } finally {
       super.endTransaction();
@@ -178,6 +197,20 @@ public final class AppDatabase_Impl extends AppDatabase {
           _accountPropertiesDao = new AccountPropertiesDao_Impl(this);
         }
         return _accountPropertiesDao;
+      }
+    }
+  }
+
+  @Override
+  public CognizantDao getCognizantDao() {
+    if (_cognizantDao != null) {
+      return _cognizantDao;
+    } else {
+      synchronized(this) {
+        if(_cognizantDao == null) {
+          _cognizantDao = new CognizantDao_Impl(this);
+        }
+        return _cognizantDao;
       }
     }
   }

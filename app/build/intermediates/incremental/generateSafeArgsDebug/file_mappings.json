@@ -1,1 +1,1 @@
-[{"navFile":"src/main/res/navigation/auth_nav.xml","javaFiles":["com.mvistudy.ui.auth.LauncherFragmentDirections"]}]
+[{"navFile":"src/main/res/navigation/auth_nav.xml","javaFiles":["com.mvistudy.ui.auth.LauncherFragmentDirections"]},{"navFile":"src/main/res/navigation/cogzi_nav.xml","javaFiles":[]}]

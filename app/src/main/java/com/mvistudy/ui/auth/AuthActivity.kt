@@ -9,6 +9,9 @@ import com.mvistudy.ui.BaseActivity
  */
 
 class AuthActivity : BaseActivity() {
+    override fun displayProgressBar(bool: Boolean) {
+
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
