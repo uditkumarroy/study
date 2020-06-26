@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/main/Documents/AndroidStudyGit/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
+            "outputFile": "C:\\Users\\SUJAY\\Documents\\study\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
             "map": [
                 {
-                    "source": "/Users/main/.gradle/caches/transforms-2/files-2.1/b430ab85229b31837e37e9901b9993de/jetified-android-image-cropper-2.8.0/res/values-zh/values-zh.xml",
+                    "source": "C:\\Users\\SUJAY\\.gradle\\caches\\transforms-2\\files-2.1\\b430ab85229b31837e37e9901b9993de\\jetified-android-image-cropper-2.8.0\\res\\values-zh\\values-zh.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
