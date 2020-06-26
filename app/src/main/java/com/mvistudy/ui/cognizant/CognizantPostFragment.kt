@@ -34,6 +34,7 @@ class CognizantPostFragment : BaseCognizantFragment(), CognizantListAdapter.Inte
         super.onViewCreated(view, savedInstanceState)
         initRecyclerView()
         subscribeObserver()
+        executeSearch()
         swipe_refresh.setOnRefreshListener {   executeSearch()}
 
     }

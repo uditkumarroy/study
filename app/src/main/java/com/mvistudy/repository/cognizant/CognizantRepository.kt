@@ -48,13 +48,15 @@ constructor(
 
             override suspend fun handleApiSuccessResponse(response: ApiSuccessResponse<Dropboxusercontent>) {
                 Log.e(TAG, "response ${response}")
+                var pk = 0
                 val cogziPostList: ArrayList<CognizantPost> = ArrayList()
                 val dataRows: List<Rows> = response.body.rows
                 for (cognizantResponse in dataRows) {
                     Log.e(TAG, "response ${cognizantResponse}")
+                    pk++
                     cogziPostList.add(
                         CognizantPost(
-                            pk = 1,
+                            pk = pk,
                             title = "${cognizantResponse.title}",
                             description = "${cognizantResponse.description}",
                             imageHref = "${cognizantResponse.imageHref}"
